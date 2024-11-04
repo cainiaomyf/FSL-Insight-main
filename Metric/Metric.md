@@ -275,12 +275,54 @@
 21. 【ICLR‘19】**Learning to propagate labels: Transductive propagation network for few-shot learning**
 <br>*Shuo Li, Fang Liu, Zehua Hao, Kaibo Zhao, Licheng Jiao*
 <br>[paper](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136910406.pdf)
-[code]([https://github.com/ArmanAfrasiyabi/MixtFSL-fs](https://github.com/csyanbin/TPN-pytorch))
+[code](https://github.com/csyanbin/TPN-pytorch)
 
-|*MixtFSL*| Mini<br>(5w,1s) | Mini<br>(5w,5s) | Tiered<br>(5w,1s) | Tiered<br>(5w,5s) |
+|*TPN*| Mini<br>(5w,1s) | Mini<br>(5w,5s) | Tiered<br>(5w,1s) | Tiered<br>(5w,5s) |
 |:------:|:------:|:------:|:------:|:------:|
-|ConvNet4|53.75|69.43|57.53|72.85|
+|ConvNet4|53.75|69.43|57.53±0.96|72.85±0.74|
 
 
+22. 【CVPR‘19】**Edge-Labeling Graph Neural Network for Few-shot Learning**
+<br>*Jongmin Kim, Taesup Kim, Sungwoong Kim, Chang D.Yoo*
+<br>[paper](https://openaccess.thecvf.com/content_CVPR_2019/papers/Kim_Edge-Labeling_Graph_Neural_Network_for_Few-Shot_Learning_CVPR_2019_paper.pdf)
+[code](https://github.com/jmkim0309/fewshot-egnn)
+
+|*EGNN+Tran.*| Mini<br>(5w,1s) | Mini<br>(5w,5s) | Tiered<br>(5w,1s) | Tiered<br>(5w,5s) |
+|:------:|:------:|:------:|:------:|:------:|
+|ConvNet4|-|76.34±0.48|-|80.15±0.30|
+|*EGNN*| Mini<br>(5w,1s) | Mini<br>(5w,5s) | Tiered<br>(5w,1s) | Tiered<br>(5w,5s) |
+|ConvNet4|-|66.85|-|70.98|
 
 
+23. 【CVPR‘20】**DPGN: distribution propagation graph network for few-shot learning**
+<br>*Ling Yang, Liangliang Li, Zilun Zhang, Xinyu Zhou, Erjin Zhou, Yu Liu*
+<br>[paper](https://openaccess.thecvf.com/content_CVPR_2020/papers/Yang_DPGN_Distribution_Propagation_Graph_Network_for_Few-Shot_Learning_CVPR_2020_paper.pdf)
+[code](https://github.com/jmkim0309/fewshot-egnn)
+
+|*DPGN*| Mini<br>(5w,1s) | Mini<br>(5w,5s) | Tiered<br>(5w,1s) | Tiered<br>(5w,5s) |CIFARFS<br>(5w,1s) | CIFARFS<br>(5w,5s) | CUB<br>(5w,1s) | CUB<br>(5w,5s) |
+|:------:|:------:|:------:|:------:|:------:|
+|ConvNet4|66.01±0.36|82.83±0.41|69.43±0.49|85.92±0.42|76.40±0.50|88.40±0.40|76.05±0.51|89.08±0.38|
+|Resnet12|67.77±0.32|84.60±0.43|72.45±0.51|87.24±0.39|77.90±0.50|90.20±0.40|75.51±0.47|91.48±0.33|
+|Resnet18|66.63±0.51|84.07±0.42|70.46±0.52|86.44±0.41|-|-|-|-|
+|WRN28|67.24±0.51|83.72±0.44|-|-|-|-|-|-|
+
+24. 【CVPR‘21】**ECKPN: Explicit Class Knowledge Propagation Network for Transductive Few-shot Learning**
+<br>*Chaofan Chen, Xiaoshan Yang, Changsheng Xu, Xuhui Huang, Zhe Ma*
+<br>[paper](https://arxiv.org/pdf/2106.08523v1)
+
+|*ECKPN*| Mini<br>(5w,1s) | Mini<br>(5w,5s) | Tiered<br>(5w,1s) | Tiered<br>(5w,5s) |CIFARFS<br>(5w,1s) | CIFARFS<br>(5w,5s) | CUB<br>(5w,1s) | CUB<br>(5w,5s) |
+|:------:|:------:|:------:|:------:|:------:|
+|ConvNet4|68.89±0.34|83.59±0.44|70.45±0.48|86.74±0.42|77.5±0.4|89.1 ±0.5|77.20±0.36|89.72±0.31|
+|Resnet12|70.48±0.38|85.42±0.46|73.59±0.45|88.13±0.28|79.2±0.4|91.0 ±0.5|77.43±0.54|92.21±0.41|
+
+25. 【CVPR‘20】**DPGN**
+<br>*Ling Yang*
+<br>[paper]()
+[code]()
+
+|*DPGN*| Mini<br>(5w,1s) | Mini<br>(5w,5s) | Tiered<br>(5w,1s) | Tiered<br>(5w,5s) |CIFARFS<br>(5w,1s) | CIFARFS<br>(5w,5s) | CUB<br>(5w,1s) | CUB<br>(5w,5s) |
+|:------:|:------:|:------:|:------:|:------:|
+|ConvNet4|||||||||
+|Resnet12|||||||||
+|Resnet18|||||||||
+|WRN28|||||||||
