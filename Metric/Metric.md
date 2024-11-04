@@ -5,7 +5,7 @@
 <br>[paper](https://www.cs.utoronto.ca/~rsalakhu/papers/oneshot1.pdf)
 [code]()
 
-|*Siamese Nets*| Mini<br>(5w,1s) | Mini<br>(5w,5s) | Tiered<br>(5w,1s) | Tiered<br>(5w,5s) |CIFARFS<br>(5w,1s) | CIFARFS<br>(5w,5s) | CUB<br>(5w,1s) | CUB<br>(5w,5s) |CIFAR100<br>(5w,1s) | CIFAR100<br>(5w,5s) |FC100<br>(5w,1s) | FC100<br>(5w,5s) | Omn<br>(5w,1s) | Omn<br>(5w,5s) |
+|*Siamese Nets*| Mini<br>(5w,1s) | Mini<br>(5w,5s) | Tiered<br>(5w,1s) | Tiered<br>(5w,5s) |CIFARFS<br>(5w,1s) | CIFARFS<br>(5w,5s) | CUB<br>(5w,1s) | CUB<br>(5w,5s) | CIFAR100<br>(5w,1s) | CIFAR100<br>(5w,5s) |FC100<br>(5w,1s) | FC100<br>(5w,5s) | Omn<br>(5w,1s) | Omn<br>(5w,5s) |
 |:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
 |ConvNet4|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 |ResNet10|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
@@ -300,7 +300,7 @@
 [code](https://github.com/jmkim0309/fewshot-egnn)
 
 |*DPGN*| Mini<br>(5w,1s) | Mini<br>(5w,5s) | Tiered<br>(5w,1s) | Tiered<br>(5w,5s) |CIFARFS<br>(5w,1s) | CIFARFS<br>(5w,5s) | CUB<br>(5w,1s) | CUB<br>(5w,5s) |
-|:------:|:------:|:------:|:------:|:------:|
+|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
 |ConvNet4|66.01±0.36|82.83±0.41|69.43±0.49|85.92±0.42|76.40±0.50|88.40±0.40|76.05±0.51|89.08±0.38|
 |Resnet12|67.77±0.32|84.60±0.43|72.45±0.51|87.24±0.39|77.90±0.50|90.20±0.40|75.51±0.47|91.48±0.33|
 |Resnet18|66.63±0.51|84.07±0.42|70.46±0.52|86.44±0.41|-|-|-|-|
@@ -311,11 +311,86 @@
 <br>[paper](https://arxiv.org/pdf/2106.08523v1)
 
 |*ECKPN*| Mini<br>(5w,1s) | Mini<br>(5w,5s) | Tiered<br>(5w,1s) | Tiered<br>(5w,5s) |CIFARFS<br>(5w,1s) | CIFARFS<br>(5w,5s) | CUB<br>(5w,1s) | CUB<br>(5w,5s) |
-|:------:|:------:|:------:|:------:|:------:|
+|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
 |ConvNet4|68.89±0.34|83.59±0.44|70.45±0.48|86.74±0.42|77.5±0.4|89.1 ±0.5|77.20±0.36|89.72±0.31|
 |Resnet12|70.48±0.38|85.42±0.46|73.59±0.45|88.13±0.28|79.2±0.4|91.0 ±0.5|77.43±0.54|92.21±0.41|
 
-25. 【CVPR‘20】**DPGN**
+25. 【CVPR‘20】**Adaptive Cross-Modal Few-shot Learning**
+<br>*Chen Xing, Negar Rostamzadeh, Boris N. Oreshkin, Pedro O. Pinheiro*
+<br>[paper](https://arxiv.org/pdf/1902.07104v3)
+[code](https://github.com/ServiceNow/am3)
+
+|*AM3-ProtoNets++*| Mini<br>(5w,1s) | Mini<br>(5w,5s) | Tiered<br>(5w,1s) | Tiered<br>(5w,5s) |
+|:------:|:------:|:------:|:------:|:------:|
+|ResNet12|65.21±0.30|75.20±0.27|58.47±0.64|78.41±0.41|
+|*AM3-TADAM*| Mini<br>(5w,1s) | Mini<br>(5w,5s) | Tiered<br>(5w,1s) | Tiered<br>(5w,5s) |
+|ResNet12|65.30±0.49|78.10±0.36|69.08±0.47|82.58±0.31|
+|*AM3-TRAML*| Mini<br>(5w,1s) | Mini<br>(5w,5s) | Tiered<br>(5w,1s) | Tiered<br>(5w,5s) |
+|ResNet12|67.10±0.52|79.54±0.60|-|-|
+
+
+26. 【ECCV‘20】**Associative Alignment for Few-shot Image Classification**
+<br>*Arman Afrasiyabi, Jean-Francois Lalonde, Christian Gagne*
+<br>[paper](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123500018.pdf)
+[code](https://github.com/ArmanAfrasiyabi/associative-alignment-fs)
+
+|*adversarial alignment*| Mini<br>(5w,1s) | Mini<br>(5w,5s) | Tiered<br>(5w,1s) | Tiered<br>(5w,5s) |FC100<br>(5w,1s) | FC100<br>(5w,5s) | CUB<br>(5w,1s) | CUB<br>(5w,5s) |
+|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|ConvNet4|52.13±0.99|70.78±0.60|-|-|-|-|63.30±0.94|81.35±0.67|
+|Resnet18|58.84±0.77|77.92±0.82|66.44±0.61|85.12±0.53|43.44±0.71|58.69±0.56|70.80±1.12|88.04±0.54|
+|WRN28|64.79±0.93|82.02±0.88|73.87±0.76|84.95±0.59|-|-|-|-|
+|*centroid alignment*| Mini<br>(5w,1s) | Mini<br>(5w,5s) | Tiered<br>(5w,1s) | Tiered<br>(5w,5s) |FC100<br>(5w,1s) | FC100<br>(5w,5s) | CUB<br>(5w,1s) | CUB<br>(5w,5s) |
+|ConvNet4|53.14±1.06|71.45±0.72|-|-|-|-|62.71±0.88|80.48±0.81|
+|Resnet18|59.88±0.67|80.35±0.73|69.29±0.56|85.97±0.49|45.83±0.48|59.74±0.56|74.22±1.09|88.65±0.55|
+|WRN28|65.92±0.60|82.85±0.55|74.40± 0.68|86.61±0.59|-|-|-|-|
+
+27. 【CVPR‘21】**Prototype completion with primitive knowledge for few-shot learning**
+<br>*Baoquan Zhang, Xutao Li, Yunming Ye, Zhichao Huang, Lisai Zhang*
+<br>[paper](https://arxiv.org/pdf/2009.04960v6.pdf)
+[code](https://github.com/zhangbq-research/Prototype_Completion_for_FSL)
+
+|*prototype completion*| Mini<br>(5w,1s) | Mini<br>(5w,5s) | Tiered<br>(5w,1s) | Tiered<br>(5w,5s) | CUB<br>(5w,1s) | CUB<br>(5w,5s) |
+|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Resnet12|73.13±0.85|82.06 ± 0.54|81.04 ± 0.89|87.42 ± 0.57|93.20 ± 0.45|94.90 ± 0.31|
+
+
+28. 【CVPR‘21】**SEGA: Semantic Guided Attention on Visual Prototype for Few-Shot Learning**
+<br>*Fengyuan Yang, Ruiping Wang, Xilin Chen*
+<br>[paper](https://arxiv.org/pdf/2111.04316v1.pdf)
+[code](https://github.com/martayang/sega)
+
+|*SEGA*| Mini<br>(5w,1s) | Mini<br>(5w,5s) | Tiered<br>(5w,1s) | Tiered<br>(5w,5s) |CIFARFS<br>(5w,1s) | CIFARFS<br>(5w,5s) | CUB<br>(5w,1s) | CUB<br>(5w,5s) |
+|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Resnet12|69.04±0.26|79.03±0.18|72.18±0.30|84.28±0.21|78.45±0.24|86.00±0.20|84.57±0.22|90.85±0.16|
+
+
+
+29. 【CVPR‘20】**Few-Shot Learning With Multi-Granularity Knowledge Fusion and Decision-Making**
+<br>*Yuling Su, Hong Zhao, Yifeng Zheng, Yu Wang*
+<br>[paper](https://ieeexplore.ieee.org/abstract/document/10382622/)
+[code](https://github.com/fhqxa/MGKFD)
+
+|*MGKFD*| Tiered<br>(5w,1s) | Tiered<br>(5w,5s) |CIFARFS<br>(5w,1s) | CIFARFS<br>(5w,5s) |FC100<br>(5w,1s) | FC100<br>(5w,5s) |
+|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|ConvNet4|72.78±0.31|85.86±0.22|44.86±0.26|61.10±0.25|72.96±0.30|86.21±0.21|
+
+
+
+26. 【CVPR‘22】**Generating Representative Samples for Few-Shot Classification**
+<br>*Jingyi Xu, Hieu Le*
+<br>[paper](https://arxiv.org/pdf/2205.02918v1.pdf)
+[code](https://github.com/cvlab-stonybrook/fsl-rsvae)
+
+|*Resnet12*| Mini<br>(5w,1s) | Mini<br>(5w,5s) | Tiered<br>(5w,1s) | Tiered<br>(5w,5s) |
+|:------:|:------:|:------:|:------:|:------:|
+|Meta-Baseline + SVAE|69.96 ± 0.21|79.92 ± 0.16|73.05 ± 0.24|83.96 ± 0.18|
+|Meta-Baseline + R-SVAE|72.79 ± 0.19|80.70 ± 0.16|73.90 ± 0.24|84.17 ± 0.18|
+|ProtoNet + SVAE|73.01 ± 0.24|83.13 ± 0.40|76.36 ± 0.65|85.65 ± 0.50|
+|ProtoNet + R-SVAE|74.84 ± 0.23|83.28 ± 0.40|76.98 ± 0.65|85.77 ± 0.50|
+|E3BM + SVAE|73.07 ± 0.39|80.82 ± 0.31|79.85 ± 0.43|86.82 ± 0.32|
+|E3BM + R-SVAE|73.35 ± 0.37|80.95 ± 0.31|80.46 ± 0.43|86.99 ± 0.32|
+
+26. 【CVPR‘20】**Adaptive**
 <br>*Ling Yang*
 <br>[paper]()
 [code]()
