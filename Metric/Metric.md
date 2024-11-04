@@ -293,7 +293,6 @@
 |*EGNN*| Mini<br>(5w,1s) | Mini<br>(5w,5s) | Tiered<br>(5w,1s) | Tiered<br>(5w,5s) |
 |ConvNet4|-|66.85|-|70.98|
 
-
 23. 【CVPR‘20】**DPGN: distribution propagation graph network for few-shot learning**
 <br>*Ling Yang, Liangliang Li, Zilun Zhang, Xinyu Zhou, Erjin Zhou, Yu Liu*
 <br>[paper](https://openaccess.thecvf.com/content_CVPR_2020/papers/Yang_DPGN_Distribution_Propagation_Graph_Network_for_Few-Shot_Learning_CVPR_2020_paper.pdf)
@@ -351,7 +350,7 @@
 
 |*prototype completion*| Mini<br>(5w,1s) | Mini<br>(5w,5s) | Tiered<br>(5w,1s) | Tiered<br>(5w,5s) | CUB<br>(5w,1s) | CUB<br>(5w,5s) |
 |:------:|:------:|:------:|:------:|:------:|:------:|:------:|
-|Resnet12|73.13±0.85|82.06 ± 0.54|81.04 ± 0.89|87.42 ± 0.57|93.20 ± 0.45|94.90 ± 0.31|
+|Resnet12|73.13±0.85|82.06±0.54|81.04±0.89|87.42±0.57|93.20±0.45|94.90±0.31|
 
 
 28. 【CVPR‘21】**SEGA: Semantic Guided Attention on Visual Prototype for Few-Shot Learning**
@@ -383,21 +382,34 @@
 
 |*Resnet12*| Mini<br>(5w,1s) | Mini<br>(5w,5s) | Tiered<br>(5w,1s) | Tiered<br>(5w,5s) |
 |:------:|:------:|:------:|:------:|:------:|
-|Meta-Baseline + SVAE|69.96 ± 0.21|79.92 ± 0.16|73.05 ± 0.24|83.96 ± 0.18|
-|Meta-Baseline + R-SVAE|72.79 ± 0.19|80.70 ± 0.16|73.90 ± 0.24|84.17 ± 0.18|
-|ProtoNet + SVAE|73.01 ± 0.24|83.13 ± 0.40|76.36 ± 0.65|85.65 ± 0.50|
-|ProtoNet + R-SVAE|74.84 ± 0.23|83.28 ± 0.40|76.98 ± 0.65|85.77 ± 0.50|
-|E3BM + SVAE|73.07 ± 0.39|80.82 ± 0.31|79.85 ± 0.43|86.82 ± 0.32|
-|E3BM + R-SVAE|73.35 ± 0.37|80.95 ± 0.31|80.46 ± 0.43|86.99 ± 0.32|
+|Meta-Baseline + SVAE|69.96±0.21|79.92±0.16|73.05±0.24|83.96±0.18|
+|Meta-Baseline + R-SVAE|72.79±0.19|80.70±0.16|73.90±0.24|84.17±0.18|
+|ProtoNet + SVAE|73.01±0.24|83.13±0.40|76.36±0.65|85.65±0.50|
+|ProtoNet + R-SVAE|74.84±0.23|83.28±0.40|76.98±0.65|85.77±0.50|
+|E3BM + SVAE|73.07±0.39|80.82±0.31|79.85±0.43|86.82±0.32|
+|E3BM + R-SVAE|73.35±0.37|80.95±0.31|80.46±0.43|86.99±0.32|
 
-26. 【CVPR‘20】**Adaptive**
-<br>*Ling Yang*
-<br>[paper]()
-[code]()
+26. 【CVPR‘23】**Semantic Prompt for Few-Shot Image Recognition**
+<br>*Wentao Chen, Chenyang Si, Zhang Zhang, Liang Wang, Zilei Wang, Tieniu Tan*
+<br>[paper](https://arxiv.org/pdf/2303.14123v1.pdf)
+[code](https://github.com/WentaoChen0813/SemanticPrompt)
 
-|*DPGN*| Mini<br>(5w,1s) | Mini<br>(5w,5s) | Tiered<br>(5w,1s) | Tiered<br>(5w,5s) |CIFARFS<br>(5w,1s) | CIFARFS<br>(5w,5s) | CUB<br>(5w,1s) | CUB<br>(5w,5s) |
+|*Visformer-T*| Mini<br>(5w,1s) | Mini<br>(5w,5s) | Tiered<br>(5w,1s) | Tiered<br>(5w,5s) |CIFARFS<br>(5w,1s) | CIFARFS<br>(5w,5s) | FC100<br>(5w,1s) | FC100<br>(5w,5s) |
+|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|Pre-train|65.16±0.44|81.22±0.32|72.38±0.50|86.74±0.34|71.99±0.47|85.98±0.34|43.77±0.39|59.48±0.39|
+|SP-CLIP|72.31±0.40|83.42±0.30|78.03±0.46|88.55±0.32|82.18±0.40|88.24±0.32|48.53±0.38|61.55±0.41|
+|SP-SBERT|70.70±0.42|83.55±0.30|73.31±0.50|88.56±0.32|81.32±0.40|88.31±0.32|47.03±0.40|61.03±0.40|
+|SP-GloVe|70.81±0.42|83.31±0.30|74.68±0.50|88.64±0.31|81.62±0.41|88.32±0.32|46.69±0.41|61.18±0.41|
+
+
+26. 【CVPR‘24】**Simple Semantic-Aided Few-Shot Learning**
+<br>*Hai Zhang1, Junzhe Xu, Shanlin Jiang, Zhenan He*
+<br>[paper](https://openaccess.thecvf.com/content/CVPR2024/papers/Zhang_Simple_Semantic-Aided_Few-Shot_Learning_CVPR_2024_paper.pdf)
+[code](https://github.com/zhangdoudou123/SemFew)
+
+|*SemFew*| Mini<br>(5w,1s) | Mini<br>(5w,5s) | Tiered<br>(5w,1s) | Tiered<br>(5w,5s) |CIFARFS<br>(5w,1s) | CIFARFS<br>(5w,5s) | CUB<br>(5w,1s) | CUB<br>(5w,5s) |
+|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|ResNet-12|77.63±0.63|83.04±0.48|78.96±0.80|85.88±0.62|83.65±0.70|87.66±0.60|54.36±0.71|62.79±0.74|
+|*SemFew-Trans*| Mini<br>(5w,1s) | Mini<br>(5w,5s) | Tiered<br>(5w,1s) | Tiered<br>(5w,5s) |CIFARFS<br>(5w,1s) | CIFARFS<br>(5w,5s) | CUB<br>(5w,1s) | CUB<br>(5w,5s) |
 |:------:|:------:|:------:|:------:|:------:|
-|ConvNet4|||||||||
-|Resnet12|||||||||
-|Resnet18|||||||||
-|WRN28|||||||||
+|Swin-T|78.94±0.66|86.49±0.50|82.37±0.77|89.89±0.52|84.34±0.67|89.11±0.54|54.27±0.77|65.02±0.72|
