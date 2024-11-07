@@ -149,16 +149,6 @@
 |ResNet-12|56.99|75.89|56.46|74.85|54.65|73.70|36.83|51.78|
 
 
-15. 【CVPR’21】**Learning dynamic alignment via meta-filter for few-shot learning**
-<br>*Chengming Xu, Yanwei Fu, Chen Liu*
-<br>[paper](http://openaccess.thecvf.com/content/CVPR2021/papers/Xu_Learning_Dynamic_Alignment_via_Meta-Filter_for_Few-Shot_Learning_CVPR_2021_paper.pdf)
-[code](https://github.com/chmxu/Dynamic-Meta-filter)
-
-|*Meta-filter*| Mini<br>(5w,1s) | Mini<br>(5w,5s) |  Tiered<br>(5w,1s) | Tiered<br>(5w,5s) |
-|:------:|:------:|:------:|:------:|:------:|
-|ResNet-12|67.76±0.46|82.71±0.31|71.89±0.52|85.96±0.35|
-
-
 16. 【Arxiv'22】**Revisiting Unsupervised Meta-Learning via the Characteristics of Few-Shot Tasks**  
 <br>*Han-Jia Ye, Lu Han, De-Chuan Zhan*  
 <br>[paper](https://arxiv.org/abs/2011.14663) 
